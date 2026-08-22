@@ -75,12 +75,15 @@ Source: *Lessons of a landslide detective* by Christian Elliott, National Geogra
 
 ## Key decisions
 
-- **Volume proxy replaces slope** — old `slope_factor` double-counted steepness (already in USGS susceptibility); replaced with `height × steepness` volume proxy per Higman feedback and Hermanns et al. 2026 Volume criterion
-- **Weighted-additive scoring** — multiplicative zeroed out remote fjords; additive lets each signal contribute independently
-- **USGS 90 m susceptibility** over DGGS 900 m — the coarse DGGS raster marks fjords (where slides happen) as NODATA
-- **Local-maxima detection** over density clustering — clustering produced meaningless mega-blobs
-- **Barry Arm ranks low on purpose** — it already has monitoring; Scarp finds dangerous *and unwatched* places
-- **Data-confidence layer** — ~75% of SE Alaska is data-limited; showing the gap honestly is itself a finding (aligns with Walden 2025, Patton 2023)
+Entries are immutable; a changed decision gets a new number that supersedes
+the old line (old text stays, marked "— superseded by Dn").
+
+- D1 2026-06-02 **Volume proxy replaces slope** — old `slope_factor` double-counted steepness (already in USGS susceptibility); replaced with `height × steepness` volume proxy per Higman feedback and Hermanns et al. 2026 Volume criterion
+- D2 2026-06-01 **Weighted-additive scoring** — multiplicative zeroed out remote fjords; additive lets each signal contribute independently
+- D3 2026-06-01 **USGS 90 m susceptibility** over DGGS 900 m — the coarse DGGS raster marks fjords (where slides happen) as NODATA
+- D4 2026-06-01 **Local-maxima detection** over density clustering — clustering produced meaningless mega-blobs
+- D5 2026-06-01 **Barry Arm ranks low on purpose** — it already has monitoring; Scarp finds dangerous *and unwatched* places
+- D6 2026-06-01 **Data-confidence layer** — ~75% of SE Alaska is data-limited; showing the gap honestly is itself a finding (aligns with Walden 2025, Patton 2023)
 
 ---
 
